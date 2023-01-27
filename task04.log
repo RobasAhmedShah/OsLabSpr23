@@ -1,0 +1,132 @@
+Script started on 2023-01-27 10:58:11+05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="45"]
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ clear
+[H[2J[3J]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ adduser
+adduser: Only root may add a user or group to the system.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo adduser
+[sudo] password for student: 
+adduser: Only one or two names allowed.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ adduser Robas
+adduser: Only root may add a user or group to the system.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo adduser RobasAhmed[K[K[K[K[K
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ man adduser
+[?1049h[22;0;0t[?1h=ADDUSER(8)                                                            System Manager's Manual                                                            ADDUSER(8)[m
+[m
+[1mNAME[0m[m
+       adduser, addgroup - add a user or group to the system[m
+[m
+[1mSYNOPSIS[0m[m
+       [1madduser[0m  [options]  [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID] [--firstuid ID] [--lastuid ID] [--ingroup GROUP | --gid ID] [--disabled-pass‐[m
+       word] [--disabled-login] [--gecos GECOS] [--add_extra_groups] [--encrypt-home] user[m
+[m
+       [1madduser[0m --system [options] [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID] [--group | --ingroup GROUP | --gid ID]  [--disabled-password]  [--dis‐[m
+       abled-login] [--gecos GECOS] user[m
+[m
+       [1maddgroup[0m [options] [--gid ID] group[m
+[m
+       [1maddgroup[0m --system [options] [--gid ID] group[m
+[m
+       [1madduser[0m [options] user group[m
+[m
+   [1mCOMMON[0m [1mOPTIONS[0m[m
+       [--quiet] [--debug] [--force-badname] [--help|-h] [--version] [--conf FILE][m
+[m
+[1mDESCRIPTION[0m[m
+       [1madduser[0m  and  [1maddgroup[0m  add  users  and groups to the system according to command line options and configuration information in [4m/etc/adduser.conf[24m.  They are[m
+       friendlier front ends to the low level tools like [1museradd,[0m [1mgroupadd[0m and [1musermod[0m programs, by default choosing Debian policy conformant UID and  GID  values,[m
+       creating a home directory with skeletal configuration, running a custom script, and other features.  [1madduser[0m and [1maddgroup[0m can be run in one of five modes:[m
+[m
+   [1mAdd[0m [1ma[0m [1mnormal[0m [1muser[0m[m
+       If called with one non-option argument and without the [1m--system[0m or [1m--group[0m options, [1madduser[0m will add a normal user.[m
+[m
+       [1madduser[0m  will  choose the first available UID from the range specified for normal users in the configuration file.  The UID can be overridden with the [1m--uid[0m[m
+       option.[m
+[m
+       The range specified in the configuration file may be overridden with the [1m--firstuid[0m and [1m--lastuid[0m options.[m
+[m
+       By default, each user in Debian GNU/Linux is given a corresponding group with the same name.  Usergroups allow group writable directories to be easily main‐[m
+       tained by placing the appropriate users in the new group, setting the set-group-ID bit in the directory, and ensuring that all users use a umask of 002.  If[m
+       this option is turned off by setting [1mUSERGROUPS[0m to [4mno[24m, all users' GIDs are set to [1mUSERS_GID[0m.  Users' primary groups can also be overridden from the  command[m
+       line  with  the  [1m--gid[0m  or  [1m--ingroup[0m  options  to set the group by id or name, respectively.  Also, users can be added to one or more groups defined in ad‐[m
+       duser.conf either by setting ADD_EXTRA_GROUPS to 1 in adduser.conf, or by passing [1m--add_extra_groups[0m on the commandline.[m
+[m
+       [1madduser[0m will create a home directory subject to [1mDHOME[0m, [1mGROUPHOMES[0m, and [1mLETTERHOMES[0m.  The home directory can be overridden from the  command  line  with  the[m
+       [1m--home[0m  option,  and  the  shell with the [1m--shell[0m option. The home directory's set-group-ID bit is set if [1mUSERGROUPS[0m is [4myes[24m so that any files created in the[m
+       user's home directory will have the correct group.[m
+[m
+[7m Manual page adduser(8) line 1 (press h for help or q to quit)[27m[K[K       [1madduser[0m will copy files from [1mSKEL[0m into the home directory and prompt for finger (gecos) information and a password.  The gecos may  also  be  set  with  the[m
+[7m Manual page adduser(8) line 2 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ adduser [K RobasUs[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kuseradd
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+      --badnames                do not check for bad names
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+      --btrfs-subvolume-home    use BTRFS subvolume for home directory
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ adduser RobasAhmedShah
+adduser: Only root may add a user or group to the system.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ 
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo useradd Robas
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ 0[Kadduser Rob[K[K[K[K[K[K[K[K[K[K[Ksudo A[Kadduser Robas
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo adduser Robas
+adduser: Please enter a username matching the regular expression configured
+via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+option to relax this check or reconfigure NAME_REGEX.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo adduser excaliber
+Adding user `excaliber' ...
+Adding new group `excaliber' (1018) ...
+Adding new user `excaliber' (1016) with group `excaliber' ...
+Creating home directory `/home/excaliber' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for excaliber
+Enter the new value, or press ENTER for the default
+	Full Name []: Robas Ahmed Shah
+	Room Number []: 1
+	Work Phone []: 03003626836
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2023-01-27 11:05:02+05:00 [COMMAND_EXIT_CODE="0"]

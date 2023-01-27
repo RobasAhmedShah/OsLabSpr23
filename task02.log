@@ -1,0 +1,15 @@
+Script started on 2023-01-27 10:53:16+05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="45"]
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ sudo apt install tt[Kree
+[sudo] password for student: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+tree is already the newest version (1.8.0-1).
+The following packages were automatically installed and are no longer required:
+  libfwupdplugin1 libxmlb1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 37 not upgraded.
+]0;student@student-OptiPlex-7090: ~[01;32mstudent@student-OptiPlex-7090[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2023-01-27 10:53:30+05:00 [COMMAND_EXIT_CODE="0"]
