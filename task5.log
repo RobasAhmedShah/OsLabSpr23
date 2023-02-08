@@ -1,0 +1,13 @@
+Script started on 2023-02-08 10:45:46+0500
+]0;adminx@adminx-VirtualBox: ~/Desktop[01;32madminx@adminx-VirtualBox[00m:[01;34m~/Desktop[00m$ su user1
+Password: 
+$ sudo su       passwd user2
+passwd: You may not view or modify password information for user2.
+$ sudo passwd user
+[sudo] password for user1: 
+user1 is not in the sudoers file.  This incident will be reported.
+$ exit
+]0;adminx@adminx-VirtualBox: ~/Desktop[01;32madminx@adminx-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+exit
+
+Script done on 2023-02-08 10:46:30+0500
